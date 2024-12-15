@@ -192,9 +192,11 @@ dbRefOutput8.on('value', snap => {
     if(snap.val()==1) {
         stateElement8.innerText=" ON";
         img8.src = 'image/fan_on.gif';
+        document.getElementById('excel').src = document.getElementById('excel').src;
     }
     else{
         stateElement8.innerText=" OFF";
         img8.src = 'image/fan_off.png';
+        document.getElementById('excel').src = document.getElementById('excel').src;
     }
 });
